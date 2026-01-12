@@ -11,7 +11,7 @@ body {
   margin: 0;
 }*/
 
-.wrapper {
+.wrapper-up {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -21,11 +21,21 @@ body {
     gap: 120px;
 }
 
+.wrapper-mid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
 .left-side,
 .right-side {
   display: flex;
   flex-direction: column;
   width: 600px;
+
+  margin-top: 20px;
+  padding-bottom: 80px;
 }
 
 .right-side {
@@ -34,6 +44,8 @@ body {
 
 .head {
   background-color: rgb(244, 218, 186);
+  background-image: url(resources/runy2.png);
+  background-size: contain;
 }
 
 .logo {
@@ -42,25 +54,29 @@ body {
   letter-spacing: 2px;
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 .hero-maintext {
-  font-size: 48px;
   color: #F9FAF8;
+  
+  font-size: 48px;
   font-weight: 900;
 
   margin: 0;
 }
 
 .hero-sidetext {
-  margin: 0;
   color: rgb(182, 104, 2);
+  
+  margin: 0;
   font-weight: 18px;
+  padding: 8px 0 8px 0;
 }
 
 .header-button {
   color: white;
-  background-color: brown;
+  background-color: #DAA520;
 
   font-weight: 700;
   
@@ -68,13 +84,23 @@ body {
   border-radius: 7px;
   width: 120px;
   padding: 8px;
+
 }
 
 .right-side-pic img {
   width: 300px;
+  border: 3px solid #DAA520;
+  margin: 70px 0 0 0;
+  border-radius: 7px;
 }
 
+a:hover {
+  color: #DAA520;
+}
 
+button:hover {
+  background-color: rgb(182, 104, 2);
+}
 
 a,
 li,
@@ -91,3 +117,36 @@ ul {
   gap: 15px;
 }
 
+p {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.main-hero {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mainhero-mid {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.img-mid {
+  width: 200px;
+}
+
+.column-mid {
+  width: 200px;
+}
+
+.quote-section {
+  background-color: rgb(143, 143, 143);
+  display: flex;
+  justify-content: center;
+}
