@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/* {
+  outline: 1px solid red;
+}*/
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -70,7 +74,7 @@ body {
   color: rgb(182, 104, 2);
   
   margin: 0;
-  font-weight: 18px;
+  font-size: 18px;
   padding: 8px 0 8px 0;
 }
 
@@ -146,7 +150,73 @@ p {
 }
 
 .quote-section {
-  background-color: rgb(143, 143, 143);
+  background-color: #E5E7EB;
+  margin: 66px 0 66px 0;
+  padding: 66px;
+}
+
+.quote,
+.quote-autor {
+  color: #1F2937;
+
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: start;
+
+  margin: 0 auto;
+  padding: 0;
+  width: 600px;
+  line-height: 1.2; 
+}
+
+.quote-autor {
+  font-weight: 800;
+  font-size: 20px;
+
+  font-style: normal;
+  text-align: end;
+}
+
+.bottom-section {
   display: flex;
   justify-content: center;
+}
+
+.box {
+  background-color: rgb(182, 104, 2);
+  
+  display: flex;
+  gap: 120px;
+
+  width: 1200px;
+  border-radius: 7px;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+
+  color: white;
+
+  width: 600px;
+  padding: 36px 0px 36px 62px;
+}
+
+.bottom-button {
+  width: 300px;
+  padding: 16px;
+  border-radius: 7px;
+  border: none;
+
+  color: white;
+  background-color: #DAA520;
+
+  font-weight: 700;
+  font-size: 36px;
+
+  align-self: center;
 }
